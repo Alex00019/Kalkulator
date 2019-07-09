@@ -15,13 +15,13 @@ namespace Kalkulator_easy
         public Form1()
         {
             InitializeComponent();
-        }       
+        }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)   {   }
+        private void textBox3_TextChanged(object sender, EventArgs e) { }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)   {   }
+        private void textBox1_TextChanged(object sender, EventArgs e) { }
 
-        private void label1_Click(object sender, EventArgs e)  {   }
+        private void label1_Click(object sender, EventArgs e) { }
 
         private void textBox2_TextChanged(object sender, EventArgs e) { }
 
@@ -29,36 +29,31 @@ namespace Kalkulator_easy
 
         private void label2_Click(object sender, EventArgs e) { }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            double first = Convert.ToDouble(textBox1.Text); 
-            double seccond = Convert.ToDouble(textBox2.Text);
-            double result = first + seccond;
-            textBox3.Text = Convert.ToString(result);
-        }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            double first = Convert.ToDouble(textBox1.Text); 
-            double seccond = Convert.ToDouble(textBox2.Text);
-            double result = first - seccond;
-            textBox3.Text = Convert.ToString(result);
-        }
-
-        private void button3_Click(object sender, EventArgs e)
+        private void calkulate(object sender, EventArgs e)
         {
             double first = Convert.ToDouble(textBox1.Text);
-            double seccond = Convert.ToDouble(textBox2.Text);
-            double result = first * seccond; 
-            textBox3.Text = Convert.ToString(result);
-        }
+            double second = Convert.ToDouble(textBox2.Text);
+            double result = 0.0;
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            double first = Convert.ToDouble(textBox1.Text);
-            double seccond = Convert.ToDouble(textBox2.Text);
-            double result = first / seccond;
-            textBox3.Text = Convert.ToString(result); 
+            switch (((Button)sender).Name)
+            {
+                case "button1":
+                    result = first + second;
+                    break;
+                case "button2":
+                    result = first - second;
+                    break;
+                case "button3":
+                    result = first * second;
+                    break;
+                case "button4":
+                    result = first / second;
+                    break;
+                default: break;
+            }
+            textBox3.Text = result.ToString();
+
         }
 
     }
