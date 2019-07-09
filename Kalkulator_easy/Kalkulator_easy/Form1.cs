@@ -35,25 +35,10 @@ namespace Kalkulator_easy
             double first = Convert.ToDouble(textBox1.Text);
             double second = Convert.ToDouble(textBox2.Text);
             double result = 0.0;
-
-            switch (((Button)sender).Name)
-            {
-                case "button1":
-                    result = first + second;
-                    break;
-                case "button2":
-                    result = first - second;
-                    break;
-                case "button3":
-                    result = first * second;
-                    break;
-                case "button4":
-                    result = first / second;
-                    break;
-                default: break;
-            }
+            ITwoArgumentsCalculator Calculator = Factory.Calculate(((Button)sender).Name);
+            result =Calculator.Calculate(first, second);
+            
             textBox3.Text = result.ToString();
-
         }
 
     }
