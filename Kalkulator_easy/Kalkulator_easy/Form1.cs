@@ -15,27 +15,7 @@ namespace Kalkulator_easy
         public Form1()
         {
             InitializeComponent();
-        }
-
-        public static double summa(double a, double b)
-        {
-            return a + b;
-        }
-
-        public static double raznost(double a, double b)
-        {
-            return a - b;
-        }
-
-        public static double umnogenie(double a, double b)
-        {
-            return a * b;
-        }
-
-        public static double delenie(double a, double b)
-        {
-            return a / b;
-        }
+        }       
 
         private void textBox3_TextChanged(object sender, EventArgs e)   {   }
 
@@ -43,34 +23,43 @@ namespace Kalkulator_easy
 
         private void label1_Click(object sender, EventArgs e)  {   }
 
+        private void textBox2_TextChanged(object sender, EventArgs e) { }
+
+        private void label3_Click(object sender, EventArgs e) { }
+
+        private void label2_Click(object sender, EventArgs e) { }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            textBox3.Text = Convert.ToString(summa(Convert.ToDouble(textBox1.Text), Convert.ToDouble(textBox2.Text)));
+            double first = Convert.ToDouble(textBox1.Text); 
+            double seccond = Convert.ToDouble(textBox2.Text);
+            double result = first + seccond;
+            textBox3.Text = Convert.ToString(result);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            textBox3.Text = Convert.ToString(raznost(Convert.ToDouble(textBox1.Text), Convert.ToDouble(textBox2.Text)));
+            double first = Convert.ToDouble(textBox1.Text); 
+            double seccond = Convert.ToDouble(textBox2.Text);
+            double result = first - seccond;
+            textBox3.Text = Convert.ToString(result);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            textBox3.Text = Convert.ToString(umnogenie(Convert.ToDouble(textBox1.Text), Convert.ToDouble(textBox2.Text)));
+            double first = Convert.ToDouble(textBox1.Text);
+            double seccond = Convert.ToDouble(textBox2.Text);
+            double result = first * seccond; 
+            textBox3.Text = Convert.ToString(result);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            textBox3.Text = Convert.ToString(delenie(Convert.ToDouble(textBox1.Text), Convert.ToDouble(textBox2.Text)));
+            double first = Convert.ToDouble(textBox1.Text);
+            double seccond = Convert.ToDouble(textBox2.Text);
+            double result = first / seccond;
+            textBox3.Text = Convert.ToString(result); 
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
