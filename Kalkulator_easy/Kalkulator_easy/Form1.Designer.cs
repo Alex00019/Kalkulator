@@ -42,6 +42,8 @@
             this.Degree = new System.Windows.Forms.Button();
             this.degreeTwo = new System.Windows.Forms.Button();
             this.logXAcrossY = new System.Windows.Forms.Button();
+            this.remainderOfDivision = new System.Windows.Forms.Button();
+            this.min = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // amount
@@ -172,11 +174,33 @@
             this.logXAcrossY.UseVisualStyleBackColor = true;
             this.logXAcrossY.Click += new System.EventHandler(this.TwoArguments);
             // 
+            // remainderOfDivision
+            // 
+            this.remainderOfDivision.Location = new System.Drawing.Point(174, 140);
+            this.remainderOfDivision.Name = "remainderOfDivision";
+            this.remainderOfDivision.Size = new System.Drawing.Size(75, 23);
+            this.remainderOfDivision.TabIndex = 14;
+            this.remainderOfDivision.Text = "remainder";
+            this.remainderOfDivision.UseVisualStyleBackColor = true;
+            this.remainderOfDivision.Click += new System.EventHandler(this.TwoArguments);
+            // 
+            // min
+            // 
+            this.min.Location = new System.Drawing.Point(255, 140);
+            this.min.Name = "min";
+            this.min.Size = new System.Drawing.Size(75, 23);
+            this.min.TabIndex = 15;
+            this.min.Text = "Min";
+            this.min.UseVisualStyleBackColor = true;
+            this.min.Click += new System.EventHandler(this.TwoArguments);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(342, 380);
+            this.Controls.Add(this.min);
+            this.Controls.Add(this.remainderOfDivision);
             this.Controls.Add(this.logXAcrossY);
             this.Controls.Add(this.degreeTwo);
             this.Controls.Add(this.Degree);
@@ -215,6 +239,8 @@
         private System.Windows.Forms.Button Degree;
         private System.Windows.Forms.Button degreeTwo;
         private System.Windows.Forms.Button logXAcrossY;
+        private System.Windows.Forms.Button remainderOfDivision;
+        private System.Windows.Forms.Button min;
     }
 }
 

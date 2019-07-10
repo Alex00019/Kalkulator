@@ -20,6 +20,10 @@ namespace Calculator
                     return new DegreeTwoArguments();
                 case "logXAcrossY":
                     return new LogXAcrossY();
+                case "remainderOfDivision":
+                    return new RemainderOfDivisio();
+                case "min":
+                    return new Min();
                 default:
                     throw new Exception("Неизвестная операция");
             }
