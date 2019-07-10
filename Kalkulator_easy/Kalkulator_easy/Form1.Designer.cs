@@ -46,6 +46,10 @@
             this.min = new System.Windows.Forms.Button();
             this.arifmeticMean = new System.Windows.Forms.Button();
             this.sine = new System.Windows.Forms.Button();
+            this.tan = new System.Windows.Forms.Button();
+            this.arcsine = new System.Windows.Forms.Button();
+            this.arctan = new System.Windows.Forms.Button();
+            this.oneDivideByX = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // amount
@@ -216,11 +220,55 @@
             this.sine.UseVisualStyleBackColor = true;
             this.sine.Click += new System.EventHandler(this.OneArgument);
             // 
+            // tan
+            // 
+            this.tan.Location = new System.Drawing.Point(174, 169);
+            this.tan.Name = "tan";
+            this.tan.Size = new System.Drawing.Size(75, 23);
+            this.tan.TabIndex = 18;
+            this.tan.Text = "Tangent";
+            this.tan.UseVisualStyleBackColor = true;
+            this.tan.Click += new System.EventHandler(this.OneArgument);
+            // 
+            // arcsine
+            // 
+            this.arcsine.Location = new System.Drawing.Point(255, 169);
+            this.arcsine.Name = "arcsine";
+            this.arcsine.Size = new System.Drawing.Size(75, 23);
+            this.arcsine.TabIndex = 19;
+            this.arcsine.Text = "Arcsine";
+            this.arcsine.UseVisualStyleBackColor = true;
+            this.arcsine.Click += new System.EventHandler(this.OneArgument);
+            // 
+            // arctan
+            // 
+            this.arctan.Location = new System.Drawing.Point(12, 198);
+            this.arctan.Name = "arctan";
+            this.arctan.Size = new System.Drawing.Size(75, 23);
+            this.arctan.TabIndex = 20;
+            this.arctan.Text = "Arctan";
+            this.arctan.UseVisualStyleBackColor = true;
+            this.arctan.Click += new System.EventHandler(this.OneArgument);
+            // 
+            // oneDivideByX
+            // 
+            this.oneDivideByX.Location = new System.Drawing.Point(93, 198);
+            this.oneDivideByX.Name = "oneDivideByX";
+            this.oneDivideByX.Size = new System.Drawing.Size(75, 23);
+            this.oneDivideByX.TabIndex = 21;
+            this.oneDivideByX.Text = "OneDivideByX";
+            this.oneDivideByX.UseVisualStyleBackColor = true;
+            this.oneDivideByX.Click += new System.EventHandler(this.OneArgument);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(342, 380);
+            this.Controls.Add(this.oneDivideByX);
+            this.Controls.Add(this.arctan);
+            this.Controls.Add(this.arcsine);
+            this.Controls.Add(this.tan);
             this.Controls.Add(this.sine);
             this.Controls.Add(this.arifmeticMean);
             this.Controls.Add(this.min);
@@ -267,6 +315,10 @@
         private System.Windows.Forms.Button min;
         private System.Windows.Forms.Button arifmeticMean;
         private System.Windows.Forms.Button sine;
+        private System.Windows.Forms.Button tan;
+        private System.Windows.Forms.Button arcsine;
+        private System.Windows.Forms.Button arctan;
+        private System.Windows.Forms.Button oneDivideByX;
     }
 }
 
