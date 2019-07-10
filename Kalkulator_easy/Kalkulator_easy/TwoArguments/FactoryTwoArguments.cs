@@ -25,7 +25,9 @@ namespace Calculator
                 case "min":
                     return new Min();
                 case "arifmeticMean":
-                    return new ArifmeticMean();                    
+                    return new ArifmeticMean();
+                case "reversePower":
+                    return new ReversePower();                  
                 default:
                     throw new Exception("Неизвестная операция");
             }

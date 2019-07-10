@@ -46,10 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Arcsine.cs" />
-    <Compile Include="Arctan.cs" />
-    <Compile Include="OneDivideByX.cs" />
-    <Compile Include="Tangent.cs" />
+    <Compile Include="OneArgument\Arcsine.cs" />
+    <Compile Include="OneArgument\Arctan.cs" />
+    <Compile Include="OneArgument\OneDivideByX.cs" />
+    <Compile Include="OneArgument\Tangent.cs" />
     <Compile Include="TwoArguments\Amount.cs" />
     <Compile Include="TwoArguments\ArifmeticMean.cs" />
     <Compile Include="OneArgument\Degree.cs" />
@@ -74,6 +74,7 @@
     <Compile Include="TwoArguments\RemainderOfDivisio.cs" />
     <Compile Include="OneArgument\Root.cs" />
     <Compile Include="OneArgument\Sine.cs" />
+    <Compile Include="TwoArguments\ReversePower.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
