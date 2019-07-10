@@ -8,6 +8,5 @@ namespace Calculator
         {
             return Math.Sqrt(one);
         }
-
     }
 }

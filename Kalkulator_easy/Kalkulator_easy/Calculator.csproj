@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Amount.cs" />
     <Compile Include="Degree.cs" />
+    <Compile Include="DegreeTwoArguments.cs" />
     <Compile Include="Difference.cs" />
     <Compile Include="Division.cs" />
     <Compile Include="actoryTwoArguments.cs" />

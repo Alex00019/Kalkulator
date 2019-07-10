@@ -40,6 +40,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.Root = new System.Windows.Forms.Button();
             this.Degree = new System.Windows.Forms.Button();
+            this.degreeTwo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // amount
@@ -150,11 +151,22 @@
             this.Degree.UseVisualStyleBackColor = true;
             this.Degree.Click += new System.EventHandler(this.OneArgument);
             // 
+            // degreeTwo
+            // 
+            this.degreeTwo.Location = new System.Drawing.Point(12, 140);
+            this.degreeTwo.Name = "degreeTwo";
+            this.degreeTwo.Size = new System.Drawing.Size(75, 23);
+            this.degreeTwo.TabIndex = 12;
+            this.degreeTwo.Text = "DegreeTwo";
+            this.degreeTwo.UseVisualStyleBackColor = true;
+            this.degreeTwo.Click += new System.EventHandler(this.TwoArguments);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(351, 296);
+            this.ClientSize = new System.Drawing.Size(342, 380);
+            this.Controls.Add(this.degreeTwo);
             this.Controls.Add(this.Degree);
             this.Controls.Add(this.Root);
             this.Controls.Add(this.label3);
@@ -189,6 +201,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button Root;
         private System.Windows.Forms.Button Degree;
+        private System.Windows.Forms.Button degreeTwo;
     }
 }
 

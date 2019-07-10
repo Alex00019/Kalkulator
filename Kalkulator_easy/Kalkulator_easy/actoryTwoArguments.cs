@@ -16,6 +16,8 @@ namespace Calculator
                     return new Multiplication();
                 case "division":
                     return new Division();
+                case "degreeTwo":
+                    return new DegreeTwoArguments();
                 default:
                     throw new Exception("Неизвестная операция");
             }
