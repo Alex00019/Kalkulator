@@ -36,10 +36,16 @@ namespace Kalkulator_easy
             double second = Convert.ToDouble(textBox2.Text);
             double result = 0.0;
             ITwoArgumentsCalculator Calculator = Factory.Calculate(((Button)sender).Name);
-            result =Calculator.Calculate(first, second);
-            
+            result = Calculator.Calculate(first, second);
             textBox3.Text = result.ToString();
         }
-
+        private void DR(object sender, EventArgs e)
+        {
+            double one = Convert.ToDouble(textBox1.Text);
+            double result = 0.0;
+            Interface777 Calculator_2 = Factory_2.Calculate(((Button)sender).Name);
+            result = Calculator_2.Calculate(one);
+            textBox3.Text = result.ToString();
+        }
     }
 }

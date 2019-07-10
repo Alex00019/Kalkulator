@@ -144,6 +144,7 @@
             this.Root.TabIndex = 10;
             this.Root.Text = "Root";
             this.Root.UseVisualStyleBackColor = true;
+            this.Root.Click += new System.EventHandler(this.DR);
             // 
             // Degree
             // 
@@ -153,6 +154,7 @@
             this.Degree.TabIndex = 11;
             this.Degree.Text = "Degree";
             this.Degree.UseVisualStyleBackColor = true;
+            this.Degree.Click += new System.EventHandler(this.DR);
             // 
             // Form1
             // 

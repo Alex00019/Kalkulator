@@ -10,7 +10,7 @@ namespace Kalkulator_easy
     {
         public double Calculate(double one)
         {
-            return one * one;
+            return Math.Sqrt(one);
         }
 
     }
