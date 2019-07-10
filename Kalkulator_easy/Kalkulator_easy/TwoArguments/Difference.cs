@@ -1,6 +1,6 @@
 ﻿namespace Calculator
 {
-    class Difference : ITwoArgumentsCalculator
+    public class Difference : ITwoArgumentsCalculator
     {
         public double Calculate(double first, double second)
         {
