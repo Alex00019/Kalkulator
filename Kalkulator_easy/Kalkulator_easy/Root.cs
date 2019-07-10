@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Kalkulator_easy
+namespace Calculator
 {
-    class Root:Interface777
+    class Root: IOneArgumentsCalculator
     {
         public double Calculate(double one)
         {

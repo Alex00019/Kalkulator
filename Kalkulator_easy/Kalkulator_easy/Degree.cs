@@ -1,16 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Kalkulator_easy
+namespace Calculator
 {
-    class Degree: Interface777
+    class Degree : IOneArgumentsCalculator
     {
         public double Calculate(double one)
         {
-            return Math.Pow(one,2);
+            return Math.Pow(one, 2);
         }
     }
 }

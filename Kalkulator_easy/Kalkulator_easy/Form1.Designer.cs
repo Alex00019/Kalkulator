@@ -1,4 +1,4 @@
-﻿namespace Kalkulator_easy
+﻿namespace Calculator
 {
     partial class Form1
     {
@@ -44,43 +44,43 @@
             // 
             // amount
             // 
-            this.amount.Location = new System.Drawing.Point(12, 104);
+            this.amount.Location = new System.Drawing.Point(12, 73);
             this.amount.Name = "amount";
             this.amount.Size = new System.Drawing.Size(75, 23);
             this.amount.TabIndex = 0;
             this.amount.Text = "+";
             this.amount.UseVisualStyleBackColor = true;
-            this.amount.Click += new System.EventHandler(this.calkulate);
+            this.amount.Click += new System.EventHandler(this.TwoArguments);
             // 
             // difference
             // 
-            this.difference.Location = new System.Drawing.Point(93, 104);
+            this.difference.Location = new System.Drawing.Point(93, 73);
             this.difference.Name = "difference";
             this.difference.Size = new System.Drawing.Size(75, 23);
             this.difference.TabIndex = 1;
             this.difference.Text = "-";
             this.difference.UseVisualStyleBackColor = true;
-            this.difference.Click += new System.EventHandler(this.calkulate);
+            this.difference.Click += new System.EventHandler(this.TwoArguments);
             // 
             // multiplication
             // 
-            this.multiplication.Location = new System.Drawing.Point(174, 104);
+            this.multiplication.Location = new System.Drawing.Point(174, 73);
             this.multiplication.Name = "multiplication";
             this.multiplication.Size = new System.Drawing.Size(75, 23);
             this.multiplication.TabIndex = 2;
             this.multiplication.Text = "*";
             this.multiplication.UseVisualStyleBackColor = true;
-            this.multiplication.Click += new System.EventHandler(this.calkulate);
+            this.multiplication.Click += new System.EventHandler(this.TwoArguments);
             // 
             // division
             // 
-            this.division.Location = new System.Drawing.Point(255, 104);
+            this.division.Location = new System.Drawing.Point(255, 73);
             this.division.Name = "division";
             this.division.Size = new System.Drawing.Size(75, 23);
             this.division.TabIndex = 3;
             this.division.Text = "/";
             this.division.UseVisualStyleBackColor = true;
-            this.division.Click += new System.EventHandler(this.calkulate);
+            this.division.Click += new System.EventHandler(this.TwoArguments);
             // 
             // textBox1
             // 
@@ -88,7 +88,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 4;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -96,7 +95,6 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 5;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox3
             // 
@@ -104,7 +102,6 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 6;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label1
             // 
@@ -114,7 +111,6 @@
             this.label1.Size = new System.Drawing.Size(97, 13);
             this.label1.TabIndex = 7;
             this.label1.Text = "Первый аргумент";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -124,7 +120,6 @@
             this.label2.Size = new System.Drawing.Size(93, 13);
             this.label2.TabIndex = 8;
             this.label2.Text = "Второй аргумент";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -134,27 +129,26 @@
             this.label3.Size = new System.Drawing.Size(59, 13);
             this.label3.TabIndex = 9;
             this.label3.Text = "Результат";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // Root
             // 
-            this.Root.Location = new System.Drawing.Point(93, 156);
+            this.Root.Location = new System.Drawing.Point(93, 102);
             this.Root.Name = "Root";
             this.Root.Size = new System.Drawing.Size(75, 23);
             this.Root.TabIndex = 10;
             this.Root.Text = "Root";
             this.Root.UseVisualStyleBackColor = true;
-            this.Root.Click += new System.EventHandler(this.DR);
+            this.Root.Click += new System.EventHandler(this.OneArgument);
             // 
             // Degree
             // 
-            this.Degree.Location = new System.Drawing.Point(174, 156);
+            this.Degree.Location = new System.Drawing.Point(174, 102);
             this.Degree.Name = "Degree";
             this.Degree.Size = new System.Drawing.Size(75, 23);
             this.Degree.TabIndex = 11;
             this.Degree.Text = "Degree";
             this.Degree.UseVisualStyleBackColor = true;
-            this.Degree.Click += new System.EventHandler(this.DR);
+            this.Degree.Click += new System.EventHandler(this.OneArgument);
             // 
             // Form1
             // 
@@ -175,6 +169,7 @@
             this.Controls.Add(this.amount);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

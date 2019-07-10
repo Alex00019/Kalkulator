@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Kalkulator_easy.Properties
+namespace Calculator.Properties
 {
 
 
