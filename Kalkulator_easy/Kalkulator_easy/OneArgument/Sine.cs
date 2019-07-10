@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-    class RemainderOfDivisio : ITwoArgumentsCalculator
+    public class Sine : IOneArgumentsCalculator
     {
-        public double Calculate(double first, double second)
+        public double Calculate(double argument)
         {
-            return first % second;
+            return Math.Sin(argument);
         }
     }
 }
+

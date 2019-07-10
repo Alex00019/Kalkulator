@@ -2,7 +2,7 @@
 
 namespace Calculator
 {
-    class Root: IOneArgumentsCalculator
+    public class Root: IOneArgumentsCalculator
     {
         public double Calculate(double one)
         {

@@ -11,7 +11,10 @@ namespace Calculator
                 case "Root":
                     return new Root();
                 case "Degree":
-                    return new Degree();                
+                    return new Degree();
+                case "sine":
+                    return new Sine();
+                    
                 default:
                     throw new Exception("Неизвестная операция");
             }

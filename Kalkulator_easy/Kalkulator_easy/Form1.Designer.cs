@@ -45,6 +45,7 @@
             this.remainderOfDivision = new System.Windows.Forms.Button();
             this.min = new System.Windows.Forms.Button();
             this.arifmeticMean = new System.Windows.Forms.Button();
+            this.sine = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // amount
@@ -205,11 +206,22 @@
             this.arifmeticMean.UseVisualStyleBackColor = true;
             this.arifmeticMean.Click += new System.EventHandler(this.TwoArguments);
             // 
+            // sine
+            // 
+            this.sine.Location = new System.Drawing.Point(93, 169);
+            this.sine.Name = "sine";
+            this.sine.Size = new System.Drawing.Size(75, 23);
+            this.sine.TabIndex = 17;
+            this.sine.Text = "Sine";
+            this.sine.UseVisualStyleBackColor = true;
+            this.sine.Click += new System.EventHandler(this.OneArgument);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(342, 380);
+            this.Controls.Add(this.sine);
             this.Controls.Add(this.arifmeticMean);
             this.Controls.Add(this.min);
             this.Controls.Add(this.remainderOfDivision);
@@ -254,6 +266,7 @@
         private System.Windows.Forms.Button remainderOfDivision;
         private System.Windows.Forms.Button min;
         private System.Windows.Forms.Button arifmeticMean;
+        private System.Windows.Forms.Button sine;
     }
 }
 

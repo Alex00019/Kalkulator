@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-    class Min : ITwoArgumentsCalculator
+    public class LogXAcrossY : ITwoArgumentsCalculator
     {
         public double Calculate(double first, double second)
         {
-            return Math.Min(first, second);
+            return Math.Log(first, second);
         }
     }
 }
