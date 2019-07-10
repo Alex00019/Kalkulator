@@ -38,6 +38,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.Root = new System.Windows.Forms.Button();
+            this.Degree = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // amount
@@ -134,11 +136,31 @@
             this.label3.Text = "Результат";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
+            // Root
+            // 
+            this.Root.Location = new System.Drawing.Point(93, 156);
+            this.Root.Name = "Root";
+            this.Root.Size = new System.Drawing.Size(75, 23);
+            this.Root.TabIndex = 10;
+            this.Root.Text = "Root";
+            this.Root.UseVisualStyleBackColor = true;
+            // 
+            // Degree
+            // 
+            this.Degree.Location = new System.Drawing.Point(174, 156);
+            this.Degree.Name = "Degree";
+            this.Degree.Size = new System.Drawing.Size(75, 23);
+            this.Degree.TabIndex = 11;
+            this.Degree.Text = "Degree";
+            this.Degree.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(351, 296);
+            this.Controls.Add(this.Degree);
+            this.Controls.Add(this.Root);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -168,6 +190,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button Root;
+        private System.Windows.Forms.Button Degree;
     }
 }
 
