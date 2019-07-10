@@ -18,6 +18,8 @@ namespace Calculator
                     return new Division();
                 case "degreeTwo":
                     return new DegreeTwoArguments();
+                case "logXAcrossY":
+                    return new LogXAcrossY();
                 default:
                     throw new Exception("Неизвестная операция");
             }

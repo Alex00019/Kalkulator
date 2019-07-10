@@ -61,6 +61,7 @@
     </Compile>
     <Compile Include="IOneArgumentCalculator.cs" />
     <Compile Include="ITwoArgumentsCalculator.cs" />
+    <Compile Include="Logx%28y%29.cs" />
     <Compile Include="Multiplication.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -41,6 +41,7 @@
             this.Root = new System.Windows.Forms.Button();
             this.Degree = new System.Windows.Forms.Button();
             this.degreeTwo = new System.Windows.Forms.Button();
+            this.logXAcrossY = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // amount
@@ -161,11 +162,22 @@
             this.degreeTwo.UseVisualStyleBackColor = true;
             this.degreeTwo.Click += new System.EventHandler(this.TwoArguments);
             // 
+            // logXAcrossY
+            // 
+            this.logXAcrossY.Location = new System.Drawing.Point(93, 140);
+            this.logXAcrossY.Name = "logXAcrossY";
+            this.logXAcrossY.Size = new System.Drawing.Size(75, 23);
+            this.logXAcrossY.TabIndex = 13;
+            this.logXAcrossY.Text = "logXAcrossY";
+            this.logXAcrossY.UseVisualStyleBackColor = true;
+            this.logXAcrossY.Click += new System.EventHandler(this.TwoArguments);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(342, 380);
+            this.Controls.Add(this.logXAcrossY);
             this.Controls.Add(this.degreeTwo);
             this.Controls.Add(this.Degree);
             this.Controls.Add(this.Root);
@@ -202,6 +214,7 @@
         private System.Windows.Forms.Button Root;
         private System.Windows.Forms.Button Degree;
         private System.Windows.Forms.Button degreeTwo;
+        private System.Windows.Forms.Button logXAcrossY;
     }
 }
 
