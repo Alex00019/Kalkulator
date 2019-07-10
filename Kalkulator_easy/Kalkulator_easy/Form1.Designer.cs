@@ -51,6 +51,7 @@
             this.arctan = new System.Windows.Forms.Button();
             this.oneDivideByX = new System.Windows.Forms.Button();
             this.reversePower = new System.Windows.Forms.Button();
+            this.max = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // amount
@@ -263,7 +264,7 @@
             // 
             // reversePower
             // 
-            this.reversePower.Location = new System.Drawing.Point(174, 198);
+            this.reversePower.Location = new System.Drawing.Point(12, 238);
             this.reversePower.Name = "reversePower";
             this.reversePower.Size = new System.Drawing.Size(75, 23);
             this.reversePower.TabIndex = 22;
@@ -271,11 +272,22 @@
             this.reversePower.UseVisualStyleBackColor = true;
             this.reversePower.Click += new System.EventHandler(this.TwoArguments);
             // 
+            // max
+            // 
+            this.max.Location = new System.Drawing.Point(93, 238);
+            this.max.Name = "max";
+            this.max.Size = new System.Drawing.Size(75, 23);
+            this.max.TabIndex = 23;
+            this.max.Text = "Max";
+            this.max.UseVisualStyleBackColor = true;
+            this.max.Click += new System.EventHandler(this.TwoArguments);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(342, 380);
+            this.Controls.Add(this.max);
             this.Controls.Add(this.reversePower);
             this.Controls.Add(this.oneDivideByX);
             this.Controls.Add(this.arctan);
@@ -332,6 +344,7 @@
         private System.Windows.Forms.Button arctan;
         private System.Windows.Forms.Button oneDivideByX;
         private System.Windows.Forms.Button reversePower;
+        private System.Windows.Forms.Button max;
     }
 }
 

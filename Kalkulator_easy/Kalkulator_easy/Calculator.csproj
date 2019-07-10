@@ -67,6 +67,7 @@
     <Compile Include="OneArgument\IOneArgumentCalculator.cs" />
     <Compile Include="TwoArguments\ITwoArgumentsCalculator.cs" />
     <Compile Include="TwoArguments\Logx%28y%29.cs" />
+    <Compile Include="TwoArguments\Max.cs" />
     <Compile Include="TwoArguments\Min.cs" />
     <Compile Include="TwoArguments\Multiplication.cs" />
     <Compile Include="Program.cs" />

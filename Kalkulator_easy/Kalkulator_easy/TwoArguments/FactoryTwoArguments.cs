@@ -27,7 +27,9 @@ namespace Calculator
                 case "arifmeticMean":
                     return new ArifmeticMean();
                 case "reversePower":
-                    return new ReversePower();                  
+                    return new ReversePower();
+                case "max":
+                    return new Max();
                 default:
                     throw new Exception("Неизвестная операция");
             }
