@@ -44,6 +44,7 @@
             this.logXAcrossY = new System.Windows.Forms.Button();
             this.remainderOfDivision = new System.Windows.Forms.Button();
             this.min = new System.Windows.Forms.Button();
+            this.arifmeticMean = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // amount
@@ -194,11 +195,22 @@
             this.min.UseVisualStyleBackColor = true;
             this.min.Click += new System.EventHandler(this.TwoArguments);
             // 
+            // arifmeticMean
+            // 
+            this.arifmeticMean.Location = new System.Drawing.Point(12, 169);
+            this.arifmeticMean.Name = "arifmeticMean";
+            this.arifmeticMean.Size = new System.Drawing.Size(75, 23);
+            this.arifmeticMean.TabIndex = 16;
+            this.arifmeticMean.Text = "ArifmeticMean";
+            this.arifmeticMean.UseVisualStyleBackColor = true;
+            this.arifmeticMean.Click += new System.EventHandler(this.TwoArguments);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(342, 380);
+            this.Controls.Add(this.arifmeticMean);
             this.Controls.Add(this.min);
             this.Controls.Add(this.remainderOfDivision);
             this.Controls.Add(this.logXAcrossY);
@@ -241,6 +253,7 @@
         private System.Windows.Forms.Button logXAcrossY;
         private System.Windows.Forms.Button remainderOfDivision;
         private System.Windows.Forms.Button min;
+        private System.Windows.Forms.Button arifmeticMean;
     }
 }
 

@@ -24,6 +24,9 @@ namespace Calculator
                     return new RemainderOfDivisio();
                 case "min":
                     return new Min();
+                case "arifmeticMean":
+                    return new ArifmeticMean();
+                    
                 default:
                     throw new Exception("Неизвестная операция");
             }
