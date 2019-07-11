@@ -52,6 +52,14 @@
             this.oneDivideByX = new System.Windows.Forms.Button();
             this.reversePower = new System.Windows.Forms.Button();
             this.max = new System.Windows.Forms.Button();
+            this.meanGeometric = new System.Windows.Forms.Button();
+            this.cose = new System.Windows.Forms.Button();
+            this.exp = new System.Windows.Forms.Button();
+            this.arccose = new System.Windows.Forms.Button();
+            this.arcctg = new System.Windows.Forms.Button();
+            this.catangent = new System.Windows.Forms.Button();
+            this.logarithmTen = new System.Windows.Forms.Button();
+            this.twoDivide = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // amount
@@ -282,11 +290,99 @@
             this.max.UseVisualStyleBackColor = true;
             this.max.Click += new System.EventHandler(this.TwoArguments);
             // 
+            // meanGeometric
+            // 
+            this.meanGeometric.Location = new System.Drawing.Point(175, 237);
+            this.meanGeometric.Name = "meanGeometric";
+            this.meanGeometric.Size = new System.Drawing.Size(75, 23);
+            this.meanGeometric.TabIndex = 24;
+            this.meanGeometric.Text = "meanGeometric";
+            this.meanGeometric.UseVisualStyleBackColor = true;
+            this.meanGeometric.Click += new System.EventHandler(this.TwoArguments);
+            // 
+            // cose
+            // 
+            this.cose.Location = new System.Drawing.Point(257, 237);
+            this.cose.Name = "cose";
+            this.cose.Size = new System.Drawing.Size(75, 23);
+            this.cose.TabIndex = 25;
+            this.cose.Text = "cose";
+            this.cose.UseVisualStyleBackColor = true;
+            this.cose.Click += new System.EventHandler(this.OneArgument);
+            // 
+            // exp
+            // 
+            this.exp.Location = new System.Drawing.Point(12, 268);
+            this.exp.Name = "exp";
+            this.exp.Size = new System.Drawing.Size(75, 23);
+            this.exp.TabIndex = 26;
+            this.exp.Text = "exp";
+            this.exp.UseVisualStyleBackColor = true;
+            this.exp.Click += new System.EventHandler(this.OneArgument);
+            // 
+            // arccose
+            // 
+            this.arccose.Location = new System.Drawing.Point(93, 267);
+            this.arccose.Name = "arccose";
+            this.arccose.Size = new System.Drawing.Size(75, 23);
+            this.arccose.TabIndex = 27;
+            this.arccose.Text = "arccose";
+            this.arccose.UseVisualStyleBackColor = true;
+            this.arccose.Click += new System.EventHandler(this.OneArgument);
+            // 
+            // arcctg
+            // 
+            this.arcctg.Location = new System.Drawing.Point(175, 268);
+            this.arcctg.Name = "arcctg";
+            this.arcctg.Size = new System.Drawing.Size(75, 23);
+            this.arcctg.TabIndex = 28;
+            this.arcctg.Text = "arcctg";
+            this.arcctg.UseVisualStyleBackColor = true;
+            this.arcctg.Click += new System.EventHandler(this.OneArgument);
+            // 
+            // catangent
+            // 
+            this.catangent.Location = new System.Drawing.Point(257, 267);
+            this.catangent.Name = "catangent";
+            this.catangent.Size = new System.Drawing.Size(75, 23);
+            this.catangent.TabIndex = 29;
+            this.catangent.Text = "catangent";
+            this.catangent.UseVisualStyleBackColor = true;
+            this.catangent.Click += new System.EventHandler(this.OneArgument);
+            // 
+            // logarithmTen
+            // 
+            this.logarithmTen.Location = new System.Drawing.Point(12, 297);
+            this.logarithmTen.Name = "logarithmTen";
+            this.logarithmTen.Size = new System.Drawing.Size(75, 23);
+            this.logarithmTen.TabIndex = 30;
+            this.logarithmTen.Text = "logarithmTen";
+            this.logarithmTen.UseVisualStyleBackColor = true;
+            this.logarithmTen.Click += new System.EventHandler(this.OneArgument);
+            // 
+            // twoDivide
+            // 
+            this.twoDivide.Location = new System.Drawing.Point(93, 297);
+            this.twoDivide.Name = "twoDivide";
+            this.twoDivide.Size = new System.Drawing.Size(75, 23);
+            this.twoDivide.TabIndex = 31;
+            this.twoDivide.Text = "twoDivide";
+            this.twoDivide.UseVisualStyleBackColor = true;
+            this.twoDivide.Click += new System.EventHandler(this.OneArgument);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(342, 380);
+            this.Controls.Add(this.twoDivide);
+            this.Controls.Add(this.logarithmTen);
+            this.Controls.Add(this.catangent);
+            this.Controls.Add(this.arcctg);
+            this.Controls.Add(this.arccose);
+            this.Controls.Add(this.exp);
+            this.Controls.Add(this.cose);
+            this.Controls.Add(this.meanGeometric);
             this.Controls.Add(this.max);
             this.Controls.Add(this.reversePower);
             this.Controls.Add(this.oneDivideByX);
@@ -345,6 +441,14 @@
         private System.Windows.Forms.Button oneDivideByX;
         private System.Windows.Forms.Button reversePower;
         private System.Windows.Forms.Button max;
+        private System.Windows.Forms.Button meanGeometric;
+        private System.Windows.Forms.Button cose;
+        private System.Windows.Forms.Button exp;
+        private System.Windows.Forms.Button arccose;
+        private System.Windows.Forms.Button arcctg;
+        private System.Windows.Forms.Button catangent;
+        private System.Windows.Forms.Button logarithmTen;
+        private System.Windows.Forms.Button twoDivide;
     }
 }
 

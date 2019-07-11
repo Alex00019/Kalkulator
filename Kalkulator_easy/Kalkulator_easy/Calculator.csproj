@@ -46,10 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OneArgument\ArcCose.cs" />
+    <Compile Include="OneArgument\Arcctg.cs" />
     <Compile Include="OneArgument\Arcsine.cs" />
     <Compile Include="OneArgument\Arctan.cs" />
+    <Compile Include="OneArgument\Catangent.cs" />
+    <Compile Include="OneArgument\Cose.cs" />
+    <Compile Include="OneArgument\Exp.cs" />
+    <Compile Include="OneArgument\LogarithmTen.cs" />
     <Compile Include="OneArgument\OneDivideByX.cs" />
     <Compile Include="OneArgument\Tangent.cs" />
+    <Compile Include="OneArgument\TwoDivideX.cs" />
     <Compile Include="TwoArguments\Amount.cs" />
     <Compile Include="TwoArguments\ArifmeticMean.cs" />
     <Compile Include="OneArgument\Degree.cs" />
@@ -68,6 +75,7 @@
     <Compile Include="TwoArguments\ITwoArgumentsCalculator.cs" />
     <Compile Include="TwoArguments\Logx%28y%29.cs" />
     <Compile Include="TwoArguments\Max.cs" />
+    <Compile Include="TwoArguments\MeanGeometric.cs" />
     <Compile Include="TwoArguments\Min.cs" />
     <Compile Include="TwoArguments\Multiplication.cs" />
     <Compile Include="Program.cs" />

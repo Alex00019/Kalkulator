@@ -22,6 +22,20 @@ namespace Calculator
                     return new Arctan();
                 case "oneDivideByX":
                     return new OneDivideByX();
+                case "cose":
+                    return new Cose();
+                case "exp":
+                    return new Exp();
+                case "arccose":
+                    return new Arcose();
+                case "arcctg":
+                    return new Arcctg();
+                case "catangent":
+                    return new Catangent();
+                case "logarithmTen":
+                    return new LogarithmTen();
+                case "twoDivide":
+                    return new TwoDivideX();
                 default:
                     throw new Exception("Неизвестная операция");
             }

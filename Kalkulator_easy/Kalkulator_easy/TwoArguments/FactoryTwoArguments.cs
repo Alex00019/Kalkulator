@@ -30,7 +30,9 @@ namespace Calculator
                     return new ReversePower();
                 case "max":
                     return new Max();
-                default:
+                case "meanGeometric":
+                    return new MeanGeometric();
+                    default:
                     throw new Exception("Неизвестная операция");
             }
         }    
