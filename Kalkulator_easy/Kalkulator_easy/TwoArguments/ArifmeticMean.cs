@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-    class ArifmeticMean : ITwoArgumentsCalculator
+    public class ArifmeticMean : ITwoArgumentsCalculator
     {
         public double Calculate(double first, double second)
         {

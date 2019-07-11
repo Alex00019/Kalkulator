@@ -50,20 +50,34 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="OneArguments\ArcCoseTestsCase.cs" />
+    <Compile Include="OneArguments\ArcctgTestCase.cs" />
     <Compile Include="OneArguments\ArcSineTestsCase.cs" />
+    <Compile Include="OneArguments\ArctanTestCase.cs" />
+    <Compile Include="OneArguments\CatangentTestCase.cs" />
+    <Compile Include="OneArguments\CoseTestCase.cs" />
+    <Compile Include="OneArguments\DegreeTestCase.cs" />
+    <Compile Include="OneArguments\ExpTestCase.cs" />
     <Compile Include="OneArguments\OneDivideByXTestsCase.cs" />
+    <Compile Include="OneArguments\RootTestCase.cs" />
     <Compile Include="OneArguments\SineTestsCase.cs" />
+    <Compile Include="OneArguments\TwoDivideXTestCase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TwoArguments\AmountTests.cs" />
+    <Compile Include="TwoArguments\ArifmeticMeanTestCase.cs" />
+    <Compile Include="TwoArguments\DegreeTwoArgumentsTestCase.cs" />
+    <Compile Include="TwoArguments\DifferenceTestCase.cs" />
     <Compile Include="TwoArguments\DifferenceTests.cs" />
+    <Compile Include="TwoArguments\DivisionTestCase.cs" />
     <Compile Include="TwoArguments\DivisionTests.cs" />
-    <Compile Include="TwoArguments\LogarithmTests.cs" />
+    <Compile Include="OneArguments\LogarithmTests.cs" />
     <Compile Include="TwoArguments\LogOneByTwoTestsCase.cs" />
     <Compile Include="TwoArguments\MaxTestCase.cs" />
     <Compile Include="TwoArguments\MeanGeometricTestsCase.cs" />
     <Compile Include="TwoArguments\MinTestCase.cs" />
+    <Compile Include="TwoArguments\MultiplicationTestCase.cs" />
     <Compile Include="TwoArguments\MultiplicationTests.cs" />
     <Compile Include="OneArguments\TangentTestsCase.cs" />
+    <Compile Include="TwoArguments\RemainderOfDivisioTestCase.cs" />
     <Compile Include="TwoArguments\ReversePowerTestsCase.cs" />
   </ItemGroup>
   <ItemGroup>

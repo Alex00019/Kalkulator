@@ -2,7 +2,7 @@
 
 namespace Calculator
 {
-    class Degree : IOneArgumentsCalculator
+    public class Degree : IOneArgumentsCalculator
     {
         public double Calculate(double one)
         {

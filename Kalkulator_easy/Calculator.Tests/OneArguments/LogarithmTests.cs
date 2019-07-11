@@ -4,9 +4,9 @@ namespace Calculator.Tests.TwoArguments
 {
     public class LogarithmTests
     {
-        [TestCase(0, 0)]
-        [TestCase(3, 4)]
-        [TestCase(-7, -2)]
+        [TestCase(10, 1)]
+        [TestCase(100, 2)]
+        [TestCase(1000, 3)]
         public void CalculateTest( double firstValue, double expected)
         {
             var calculator = new LogarithmTen();

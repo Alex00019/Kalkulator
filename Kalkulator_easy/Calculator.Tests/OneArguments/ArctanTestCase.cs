@@ -2,16 +2,16 @@
 
 namespace Calculator.Tests.TwoArguments
 {
-    public class ArcCoseTestsCase
+    public class ArctanTestsCase
     {
-        [TestCase(1, 0)]
-        [TestCase(0, 1.570)]
-        [TestCase(-1, 3.141)]
+        [TestCase(72, 1.556)]
+        [TestCase(3, 1.249)]
+        [TestCase(-1, -0.785)]
         public void CalculateTest(double firstValue, double expected)
         {
-            var calculator = new Arcose();
+            var calculator = new Arctan();
             var actualResult = calculator.Calculate(firstValue);
-            Assert.AreEqual(expected, actualResult, 0.001);
+            Assert.AreEqual(expected, actualResult, 0.01);
         }
     }
 }
