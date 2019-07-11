@@ -2,10 +2,19 @@
 
 namespace Calculator
 {
+
     public class FactoryTwoArguments
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="first">
+        /// 
+        /// </param>
+        /// <param name="second"></param>
+        /// <returns></returns>
         public static ITwoArgumentsCalculator CreateCalculate(string name)
-        {
+        {           
             switch (name)
             {
                 case "amount":
