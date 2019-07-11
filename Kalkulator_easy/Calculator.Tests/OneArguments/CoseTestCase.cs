@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace Calculator.Tests.TwoArguments
+namespace Calculator.Tests.CalculateTest
 {
     public class CoseTestsCase
     {

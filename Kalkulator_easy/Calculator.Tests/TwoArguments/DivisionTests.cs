@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
+using System;
 
-namespace Calculator.Tests.TwoArguments
+namespace Calculator.Tests.CalculateTest
 {
     [TestFixture]
     public class DivisionTests
@@ -13,5 +14,12 @@ namespace Calculator.Tests.TwoArguments
             Assert.AreEqual(79, arthalfour);
         }
 
+        [Test]
+        public void DivisionByZeroTest()
+        {
+            var calculator = new Division();
+            Assert.Throws<Exception>(() =>calculator.Calculate(395, 0));
+  
+        }
     }
 }

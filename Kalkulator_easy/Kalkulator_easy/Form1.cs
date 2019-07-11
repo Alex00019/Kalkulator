@@ -10,7 +10,7 @@ namespace Calculator
             InitializeComponent();
         }
 
-        private void TwoArguments(object sender, EventArgs e)
+        private void CalculateTest(object sender, EventArgs e)
         {
             double first = Convert.ToDouble(textBox1.Text);
             double second = Convert.ToDouble(textBox2.Text);

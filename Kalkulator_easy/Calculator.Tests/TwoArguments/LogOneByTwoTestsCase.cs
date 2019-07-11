@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
+using System;
 
-namespace Calculator.Tests.TwoArguments
+namespace Calculator.Tests.CalculateTest
 {
     public class LogOneByTwoTestsCase
     {
@@ -16,5 +17,14 @@ namespace Calculator.Tests.TwoArguments
             var actualResult = calculator.Calculate(firstValue, secondValue);
             Assert.AreEqual(expected, actualResult);
         }
+
+        [Test]
+        public void LogOneByTwoByInvalidValueTest()
+        {
+            var calculator = new LogOneByTwo();
+            Assert.Throws<Exception>(() => calculator.Calculate(1, 0));
+
+        }
+
     }
 }

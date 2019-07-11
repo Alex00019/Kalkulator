@@ -10,6 +10,7 @@ namespace Calculator
     {
         public double Calculate(double argument)
         {
+            if(argument > 1 || argument < -1) throw new Exception(" Значение недопустимо ");
             return Math.Acos(argument);
         }
     }

@@ -48,7 +48,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="FactoryTests\FactoryOneArgumentTest.cs" />
     <Compile Include="FactoryTests\FactoryTwoArgumentsTest.cs" />
     <Compile Include="OneArguments\ArcCoseTestsCase.cs" />

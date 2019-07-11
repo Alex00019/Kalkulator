@@ -70,7 +70,7 @@
             this.amount.TabIndex = 0;
             this.amount.Text = "+";
             this.amount.UseVisualStyleBackColor = true;
-            this.amount.Click += new System.EventHandler(this.TwoArguments);
+            this.amount.Click += new System.EventHandler(this.CalculateTest);
             // 
             // difference
             // 
@@ -80,7 +80,7 @@
             this.difference.TabIndex = 1;
             this.difference.Text = "-";
             this.difference.UseVisualStyleBackColor = true;
-            this.difference.Click += new System.EventHandler(this.TwoArguments);
+            this.difference.Click += new System.EventHandler(this.CalculateTest);
             // 
             // multiplication
             // 
@@ -90,7 +90,7 @@
             this.multiplication.TabIndex = 2;
             this.multiplication.Text = "*";
             this.multiplication.UseVisualStyleBackColor = true;
-            this.multiplication.Click += new System.EventHandler(this.TwoArguments);
+            this.multiplication.Click += new System.EventHandler(this.CalculateTest);
             // 
             // division
             // 
@@ -100,7 +100,7 @@
             this.division.TabIndex = 3;
             this.division.Text = "/";
             this.division.UseVisualStyleBackColor = true;
-            this.division.Click += new System.EventHandler(this.TwoArguments);
+            this.division.Click += new System.EventHandler(this.CalculateTest);
             // 
             // textBox1
             // 
@@ -178,7 +178,7 @@
             this.degreeTwo.TabIndex = 12;
             this.degreeTwo.Text = "DegreeTwo";
             this.degreeTwo.UseVisualStyleBackColor = true;
-            this.degreeTwo.Click += new System.EventHandler(this.TwoArguments);
+            this.degreeTwo.Click += new System.EventHandler(this.CalculateTest);
             // 
             // logXAcrossY
             // 
@@ -188,7 +188,7 @@
             this.logXAcrossY.TabIndex = 13;
             this.logXAcrossY.Text = "logXAcrossY";
             this.logXAcrossY.UseVisualStyleBackColor = true;
-            this.logXAcrossY.Click += new System.EventHandler(this.TwoArguments);
+            this.logXAcrossY.Click += new System.EventHandler(this.CalculateTest);
             // 
             // remainderOfDivision
             // 
@@ -198,7 +198,7 @@
             this.remainderOfDivision.TabIndex = 14;
             this.remainderOfDivision.Text = "remainder";
             this.remainderOfDivision.UseVisualStyleBackColor = true;
-            this.remainderOfDivision.Click += new System.EventHandler(this.TwoArguments);
+            this.remainderOfDivision.Click += new System.EventHandler(this.CalculateTest);
             // 
             // min
             // 
@@ -208,7 +208,7 @@
             this.min.TabIndex = 15;
             this.min.Text = "Min";
             this.min.UseVisualStyleBackColor = true;
-            this.min.Click += new System.EventHandler(this.TwoArguments);
+            this.min.Click += new System.EventHandler(this.CalculateTest);
             // 
             // arifmeticMean
             // 
@@ -218,7 +218,7 @@
             this.arifmeticMean.TabIndex = 16;
             this.arifmeticMean.Text = "ArifmeticMean";
             this.arifmeticMean.UseVisualStyleBackColor = true;
-            this.arifmeticMean.Click += new System.EventHandler(this.TwoArguments);
+            this.arifmeticMean.Click += new System.EventHandler(this.CalculateTest);
             // 
             // sine
             // 
@@ -278,7 +278,7 @@
             this.reversePower.TabIndex = 22;
             this.reversePower.Text = "ReversePower";
             this.reversePower.UseVisualStyleBackColor = true;
-            this.reversePower.Click += new System.EventHandler(this.TwoArguments);
+            this.reversePower.Click += new System.EventHandler(this.CalculateTest);
             // 
             // max
             // 
@@ -288,7 +288,7 @@
             this.max.TabIndex = 23;
             this.max.Text = "Max";
             this.max.UseVisualStyleBackColor = true;
-            this.max.Click += new System.EventHandler(this.TwoArguments);
+            this.max.Click += new System.EventHandler(this.CalculateTest);
             // 
             // meanGeometric
             // 
@@ -298,7 +298,7 @@
             this.meanGeometric.TabIndex = 24;
             this.meanGeometric.Text = "meanGeometric";
             this.meanGeometric.UseVisualStyleBackColor = true;
-            this.meanGeometric.Click += new System.EventHandler(this.TwoArguments);
+            this.meanGeometric.Click += new System.EventHandler(this.CalculateTest);
             // 
             // cose
             // 
