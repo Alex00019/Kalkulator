@@ -58,10 +58,13 @@
     <Compile Include="TwoArguments\DifferenceTests.cs" />
     <Compile Include="TwoArguments\DivisionTests.cs" />
     <Compile Include="TwoArguments\LogarithmTests.cs" />
+    <Compile Include="TwoArguments\LogOneByTwoTestsCase.cs" />
     <Compile Include="TwoArguments\MaxTestCase.cs" />
+    <Compile Include="TwoArguments\MeanGeometricTestsCase.cs" />
     <Compile Include="TwoArguments\MinTestCase.cs" />
     <Compile Include="TwoArguments\MultiplicationTests.cs" />
     <Compile Include="OneArguments\TangentTestsCase.cs" />
+    <Compile Include="TwoArguments\ReversePowerTestsCase.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Kalkulator_easy\Calculator.csproj">

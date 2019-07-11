@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-    public class LogXAcrossY : ITwoArgumentsCalculator
+    public class LogOneByTwo : ITwoArgumentsCalculator
     {
         public double Calculate(double first, double second)
         {

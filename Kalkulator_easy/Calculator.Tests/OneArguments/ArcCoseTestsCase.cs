@@ -6,7 +6,7 @@ namespace Calculator.Tests.TwoArguments
     {
         [TestCase(1, 0)]
         [TestCase(0, 1.570)]
-        [TestCase(-20, -0.05)]
+        [TestCase(-1, -3.141)]
         public void CalculateTest(double firstValue, double expected)
         {
             var calculator = new Arcose();

@@ -19,7 +19,7 @@ namespace Calculator
                 case "degreeTwo":
                     return new DegreeTwoArguments();
                 case "logXAcrossY":
-                    return new LogXAcrossY();
+                    return new LogOneByTwo();
                 case "remainderOfDivision":
                     return new RemainderOfDivisio();
                 case "min":
