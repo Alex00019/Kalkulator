@@ -53,6 +53,8 @@
     <Compile Include="TwoArguments\AmountTests.cs" />
     <Compile Include="TwoArguments\DifferenceTests.cs" />
     <Compile Include="TwoArguments\DivisionTests.cs" />
+    <Compile Include="TwoArguments\MaxTestCase.cs" />
+    <Compile Include="TwoArguments\MinTestCase.cs" />
     <Compile Include="TwoArguments\MultiplicationTests.cs" />
   </ItemGroup>
   <ItemGroup>
