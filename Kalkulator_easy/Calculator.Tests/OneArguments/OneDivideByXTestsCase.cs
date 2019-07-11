@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using System;
 
 namespace Calculator.Tests.CalculateTest
 {
@@ -12,6 +13,12 @@ namespace Calculator.Tests.CalculateTest
             var calculator = new OneDivideByX();
             var actualResult = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, actualResult, 0.01);
+        }
+        [Test]
+        public void OneDivideByXByZeroTest()
+        {
+            var calculator = new OneDivideByX();
+            Assert.Throws<Exception>(() => calculator.Calculate(0));
         }
     }
 }

@@ -15,7 +15,7 @@ namespace Calculator.Tests.CalculateTest
             Assert.AreEqual(expected, actualResult, 0.001);
         }
         [Test]
-        public void LogOneByTwoByInvalidValueTest()
+        public void ArcCoseByInvalidValueTest()
         {
             var calculator = new Arcose();
             Assert.Throws<Exception>(() => calculator.Calculate(20));

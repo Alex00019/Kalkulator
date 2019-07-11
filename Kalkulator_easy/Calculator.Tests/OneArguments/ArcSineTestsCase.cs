@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using System;
 
 namespace Calculator.Tests.CalculateTest
 {
@@ -13,5 +14,12 @@ namespace Calculator.Tests.CalculateTest
             var actualResult = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, actualResult, 0.001);
         }
+        [Test]
+        public void ArcSineInvalidValueTest()
+        {
+            var calculator = new Arcsine();
+            Assert.Throws<Exception>(() => calculator.Calculate(234));
+        }
     }
 }
+ 
