@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="FactoryTests\FactoryOneArgumentTest.cs" />
+    <Compile Include="FactoryTests\FactoryTwoArgumentsTest.cs" />
     <Compile Include="OneArguments\ArcCoseTestsCase.cs" />
     <Compile Include="OneArguments\ArcctgTestCase.cs" />
     <Compile Include="OneArguments\ArcSineTestsCase.cs" />

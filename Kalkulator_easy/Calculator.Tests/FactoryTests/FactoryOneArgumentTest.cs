@@ -28,6 +28,5 @@ namespace Calculator.Tests.FactoryTests
             var calculator = FactoryOneArgument.CreateCalculate(name);
             Assert.IsInstanceOf(type, calculator);
         }
-
     }
 }
