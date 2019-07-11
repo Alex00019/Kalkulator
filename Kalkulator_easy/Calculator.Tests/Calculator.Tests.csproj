@@ -49,13 +49,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="OneArguments\ArcCoseTestsCase.cs" />
+    <Compile Include="OneArguments\ArcSineTestsCase.cs" />
+    <Compile Include="OneArguments\OneDivideByXTestsCase.cs" />
+    <Compile Include="OneArguments\SineTestsCase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TwoArguments\AmountTests.cs" />
     <Compile Include="TwoArguments\DifferenceTests.cs" />
     <Compile Include="TwoArguments\DivisionTests.cs" />
+    <Compile Include="TwoArguments\LogarithmTests.cs" />
     <Compile Include="TwoArguments\MaxTestCase.cs" />
     <Compile Include="TwoArguments\MinTestCase.cs" />
     <Compile Include="TwoArguments\MultiplicationTests.cs" />
+    <Compile Include="OneArguments\TangentTestsCase.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Kalkulator_easy\Calculator.csproj">
