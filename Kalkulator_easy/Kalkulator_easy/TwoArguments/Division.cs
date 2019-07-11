@@ -8,6 +8,7 @@ namespace Calculator
         {
             if (second == 0) throw new Exception(" Деление на ноль ");
             return first / second;
+
         }
     }
 }
