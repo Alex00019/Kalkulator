@@ -1,13 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Calculator
+﻿namespace Calculator
 {
     public class ArifmeticMean : ITwoArgumentsCalculator
     {
+        /// <summary>
+        /// finding the arifmetic mean
+        /// </summary>
+        /// <param name="first">
+        /// first value
+        /// </param>
+        /// <param name="second">
+        /// second value
+        /// </param>
+        /// <returns>
+        /// adding arguments and division into two
+        /// </returns>
         public double Calculate(double first, double second)
         {
             return (first + second) / 2;

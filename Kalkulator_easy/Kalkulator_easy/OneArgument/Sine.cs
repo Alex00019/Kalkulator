@@ -1,13 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Calculator
 {
     public class Sine : IOneArgumentsCalculator
     {
+        /// <summary>
+        /// finding the sine of the argument
+        /// </summary>
+        /// <param name="argument">
+        /// value
+        /// </param>
+        /// <returns>
+        /// sine of the argument
+        /// </returns>
         public double Calculate(double argument)
         {
             return Math.Sin(argument);

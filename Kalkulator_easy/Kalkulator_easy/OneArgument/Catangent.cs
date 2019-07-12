@@ -1,13 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Calculator
 {
     public class Catangent : IOneArgumentsCalculator
     {
+        /// <summary>
+        /// finding the catangenth of the argument
+        /// </summary>
+        /// <param name="argument">
+        /// value
+        /// </param>
+        /// <returns>
+        /// catangenth of the argument
+        /// </returns>
         public double Calculate(double argument)
         {
             return Math.Tan(1 / argument);

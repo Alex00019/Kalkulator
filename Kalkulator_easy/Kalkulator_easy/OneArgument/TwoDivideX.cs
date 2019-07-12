@@ -1,13 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Calculator
 {
     public class TwoDivideX : IOneArgumentsCalculator
     {
+        /// <summary>
+        /// two divide by argument
+        /// </summary>
+        /// <param name="argument">
+        /// value
+        /// </param>
+        /// <returns>
+        /// two divide by argument
+        /// </returns>
         public double Calculate(double argument)
         {
             if (argument == 0) throw new Exception(" Деление на ноль ");

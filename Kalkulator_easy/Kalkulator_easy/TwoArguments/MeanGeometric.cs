@@ -1,13 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Calculator
 {
     public class MeanGeometric : ITwoArgumentsCalculator
     {
+        /// <summary>
+        /// finding the geometric mean
+        /// </summary>
+        /// <param name="first">
+        /// first value
+        /// </param>
+        /// <param name="second">
+        /// second value
+        /// </param>
+        /// <returns>
+        /// geometric mean
+        /// </returns>
         public double Calculate(double first, double second)
         {
             return Math.Sqrt((first*first) + (second*second));

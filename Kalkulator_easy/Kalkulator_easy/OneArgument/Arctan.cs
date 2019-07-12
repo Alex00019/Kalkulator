@@ -1,13 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Calculator
 {
     public class Arctan : IOneArgumentsCalculator
     {
+        /// <summary>
+        /// finding the arc tangenth of the argument
+        /// </summary>
+        /// <param name="argument">
+        /// value
+        /// </param>
+        /// <returns>
+        /// arc tangenth of the argument
+        /// </returns>
         public double Calculate(double argument)
         {
             return Math.Atan(argument);

@@ -2,7 +2,6 @@
 
 namespace Calculator
 {
-
     public class FactoryTwoArguments
     { /// <summary>
       /// This method create calculator with two arguments

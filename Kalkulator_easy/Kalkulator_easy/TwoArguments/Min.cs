@@ -1,13 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Calculator
 {
     public class Min : ITwoArgumentsCalculator
     {
+        /// <summary>
+        /// finding the minimum element
+        /// </summary>
+        /// <param name="first">
+        /// first value
+        /// </param>
+        /// <param name="second">
+        /// second value
+        /// </param>
+        /// <returns>
+        /// minimum element
+        /// </returns>
         public double Calculate(double first, double second)
         {
             return Math.Min(first, second);

@@ -11,8 +11,7 @@ namespace Calculator
         }
 
         private void CalculateTest(object sender, EventArgs e)
-        {
-           
+        {           
             try
             {
                 double first = Convert.ToDouble(textBox1.Text);
