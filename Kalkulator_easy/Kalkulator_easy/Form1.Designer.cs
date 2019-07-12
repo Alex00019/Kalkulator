@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.amount = new System.Windows.Forms.Button();
             this.difference = new System.Windows.Forms.Button();
             this.multiplication = new System.Windows.Forms.Button();
@@ -60,13 +61,17 @@
             this.catangent = new System.Windows.Forms.Button();
             this.logarithmTen = new System.Windows.Forms.Button();
             this.twoDivide = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // amount
             // 
-            this.amount.Location = new System.Drawing.Point(12, 73);
+            this.amount.Location = new System.Drawing.Point(24, 73);
             this.amount.Name = "amount";
-            this.amount.Size = new System.Drawing.Size(75, 23);
+            this.amount.Size = new System.Drawing.Size(156, 23);
             this.amount.TabIndex = 0;
             this.amount.Text = "+";
             this.amount.UseVisualStyleBackColor = true;
@@ -74,9 +79,9 @@
             // 
             // difference
             // 
-            this.difference.Location = new System.Drawing.Point(93, 73);
+            this.difference.Location = new System.Drawing.Point(186, 73);
             this.difference.Name = "difference";
-            this.difference.Size = new System.Drawing.Size(75, 23);
+            this.difference.Size = new System.Drawing.Size(156, 23);
             this.difference.TabIndex = 1;
             this.difference.Text = "-";
             this.difference.UseVisualStyleBackColor = true;
@@ -84,9 +89,9 @@
             // 
             // multiplication
             // 
-            this.multiplication.Location = new System.Drawing.Point(174, 73);
+            this.multiplication.Location = new System.Drawing.Point(348, 73);
             this.multiplication.Name = "multiplication";
-            this.multiplication.Size = new System.Drawing.Size(75, 23);
+            this.multiplication.Size = new System.Drawing.Size(156, 23);
             this.multiplication.TabIndex = 2;
             this.multiplication.Text = "*";
             this.multiplication.UseVisualStyleBackColor = true;
@@ -94,9 +99,9 @@
             // 
             // division
             // 
-            this.division.Location = new System.Drawing.Point(255, 73);
+            this.division.Location = new System.Drawing.Point(510, 73);
             this.division.Name = "division";
-            this.division.Size = new System.Drawing.Size(75, 23);
+            this.division.Size = new System.Drawing.Size(157, 23);
             this.division.TabIndex = 3;
             this.division.Text = "/";
             this.division.UseVisualStyleBackColor = true;
@@ -104,29 +109,29 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 47);
+            this.textBox1.Location = new System.Drawing.Point(87, 28);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 4;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(118, 47);
+            this.textBox2.Location = new System.Drawing.Point(198, 28);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 5;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(230, 47);
+            this.textBox3.Location = new System.Drawing.Point(429, 311);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.Size = new System.Drawing.Size(157, 20);
             this.textBox3.TabIndex = 6;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 28);
+            this.label1.Location = new System.Drawing.Point(90, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 13);
             this.label1.TabIndex = 7;
@@ -135,26 +140,28 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(116, 28);
+            this.label2.Location = new System.Drawing.Point(195, 12);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(93, 13);
             this.label2.TabIndex = 8;
             this.label2.Text = "Второй аргумент";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(236, 31);
+            this.label3.Location = new System.Drawing.Point(413, 286);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 13);
             this.label3.TabIndex = 9;
             this.label3.Text = "Результат";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // Root
             // 
-            this.Root.Location = new System.Drawing.Point(93, 102);
+            this.Root.Location = new System.Drawing.Point(198, 102);
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(75, 23);
+            this.Root.Size = new System.Drawing.Size(132, 23);
             this.Root.TabIndex = 10;
             this.Root.Text = "Root";
             this.Root.UseVisualStyleBackColor = true;
@@ -162,9 +169,9 @@
             // 
             // Degree
             // 
-            this.Degree.Location = new System.Drawing.Point(174, 102);
+            this.Degree.Location = new System.Drawing.Point(360, 102);
             this.Degree.Name = "Degree";
-            this.Degree.Size = new System.Drawing.Size(75, 23);
+            this.Degree.Size = new System.Drawing.Size(128, 23);
             this.Degree.TabIndex = 11;
             this.Degree.Text = "Degree";
             this.Degree.UseVisualStyleBackColor = true;
@@ -172,7 +179,7 @@
             // 
             // degreeTwo
             // 
-            this.degreeTwo.Location = new System.Drawing.Point(12, 140);
+            this.degreeTwo.Location = new System.Drawing.Point(12, 169);
             this.degreeTwo.Name = "degreeTwo";
             this.degreeTwo.Size = new System.Drawing.Size(75, 23);
             this.degreeTwo.TabIndex = 12;
@@ -182,7 +189,7 @@
             // 
             // logXAcrossY
             // 
-            this.logXAcrossY.Location = new System.Drawing.Point(93, 140);
+            this.logXAcrossY.Location = new System.Drawing.Point(93, 169);
             this.logXAcrossY.Name = "logXAcrossY";
             this.logXAcrossY.Size = new System.Drawing.Size(75, 23);
             this.logXAcrossY.TabIndex = 13;
@@ -192,7 +199,7 @@
             // 
             // remainderOfDivision
             // 
-            this.remainderOfDivision.Location = new System.Drawing.Point(174, 140);
+            this.remainderOfDivision.Location = new System.Drawing.Point(174, 169);
             this.remainderOfDivision.Name = "remainderOfDivision";
             this.remainderOfDivision.Size = new System.Drawing.Size(75, 23);
             this.remainderOfDivision.TabIndex = 14;
@@ -202,7 +209,7 @@
             // 
             // min
             // 
-            this.min.Location = new System.Drawing.Point(255, 140);
+            this.min.Location = new System.Drawing.Point(255, 169);
             this.min.Name = "min";
             this.min.Size = new System.Drawing.Size(75, 23);
             this.min.TabIndex = 15;
@@ -212,7 +219,7 @@
             // 
             // arifmeticMean
             // 
-            this.arifmeticMean.Location = new System.Drawing.Point(12, 169);
+            this.arifmeticMean.Location = new System.Drawing.Point(12, 198);
             this.arifmeticMean.Name = "arifmeticMean";
             this.arifmeticMean.Size = new System.Drawing.Size(75, 23);
             this.arifmeticMean.TabIndex = 16;
@@ -222,7 +229,7 @@
             // 
             // sine
             // 
-            this.sine.Location = new System.Drawing.Point(93, 169);
+            this.sine.Location = new System.Drawing.Point(93, 198);
             this.sine.Name = "sine";
             this.sine.Size = new System.Drawing.Size(75, 23);
             this.sine.TabIndex = 17;
@@ -232,7 +239,7 @@
             // 
             // tan
             // 
-            this.tan.Location = new System.Drawing.Point(174, 169);
+            this.tan.Location = new System.Drawing.Point(174, 198);
             this.tan.Name = "tan";
             this.tan.Size = new System.Drawing.Size(75, 23);
             this.tan.TabIndex = 18;
@@ -242,7 +249,7 @@
             // 
             // arcsine
             // 
-            this.arcsine.Location = new System.Drawing.Point(255, 169);
+            this.arcsine.Location = new System.Drawing.Point(255, 198);
             this.arcsine.Name = "arcsine";
             this.arcsine.Size = new System.Drawing.Size(75, 23);
             this.arcsine.TabIndex = 19;
@@ -252,7 +259,7 @@
             // 
             // arctan
             // 
-            this.arctan.Location = new System.Drawing.Point(12, 198);
+            this.arctan.Location = new System.Drawing.Point(12, 227);
             this.arctan.Name = "arctan";
             this.arctan.Size = new System.Drawing.Size(75, 23);
             this.arctan.TabIndex = 20;
@@ -262,7 +269,7 @@
             // 
             // oneDivideByX
             // 
-            this.oneDivideByX.Location = new System.Drawing.Point(93, 198);
+            this.oneDivideByX.Location = new System.Drawing.Point(93, 227);
             this.oneDivideByX.Name = "oneDivideByX";
             this.oneDivideByX.Size = new System.Drawing.Size(75, 23);
             this.oneDivideByX.TabIndex = 21;
@@ -272,7 +279,7 @@
             // 
             // reversePower
             // 
-            this.reversePower.Location = new System.Drawing.Point(12, 238);
+            this.reversePower.Location = new System.Drawing.Point(348, 169);
             this.reversePower.Name = "reversePower";
             this.reversePower.Size = new System.Drawing.Size(75, 23);
             this.reversePower.TabIndex = 22;
@@ -282,7 +289,7 @@
             // 
             // max
             // 
-            this.max.Location = new System.Drawing.Point(93, 238);
+            this.max.Location = new System.Drawing.Point(429, 169);
             this.max.Name = "max";
             this.max.Size = new System.Drawing.Size(75, 23);
             this.max.TabIndex = 23;
@@ -292,7 +299,7 @@
             // 
             // meanGeometric
             // 
-            this.meanGeometric.Location = new System.Drawing.Point(175, 237);
+            this.meanGeometric.Location = new System.Drawing.Point(511, 168);
             this.meanGeometric.Name = "meanGeometric";
             this.meanGeometric.Size = new System.Drawing.Size(75, 23);
             this.meanGeometric.TabIndex = 24;
@@ -302,7 +309,7 @@
             // 
             // cose
             // 
-            this.cose.Location = new System.Drawing.Point(257, 237);
+            this.cose.Location = new System.Drawing.Point(593, 168);
             this.cose.Name = "cose";
             this.cose.Size = new System.Drawing.Size(75, 23);
             this.cose.TabIndex = 25;
@@ -312,7 +319,7 @@
             // 
             // exp
             // 
-            this.exp.Location = new System.Drawing.Point(12, 268);
+            this.exp.Location = new System.Drawing.Point(348, 199);
             this.exp.Name = "exp";
             this.exp.Size = new System.Drawing.Size(75, 23);
             this.exp.TabIndex = 26;
@@ -322,7 +329,7 @@
             // 
             // arccose
             // 
-            this.arccose.Location = new System.Drawing.Point(93, 267);
+            this.arccose.Location = new System.Drawing.Point(429, 198);
             this.arccose.Name = "arccose";
             this.arccose.Size = new System.Drawing.Size(75, 23);
             this.arccose.TabIndex = 27;
@@ -332,7 +339,7 @@
             // 
             // arcctg
             // 
-            this.arcctg.Location = new System.Drawing.Point(175, 268);
+            this.arcctg.Location = new System.Drawing.Point(511, 199);
             this.arcctg.Name = "arcctg";
             this.arcctg.Size = new System.Drawing.Size(75, 23);
             this.arcctg.TabIndex = 28;
@@ -342,7 +349,7 @@
             // 
             // catangent
             // 
-            this.catangent.Location = new System.Drawing.Point(257, 267);
+            this.catangent.Location = new System.Drawing.Point(593, 198);
             this.catangent.Name = "catangent";
             this.catangent.Size = new System.Drawing.Size(75, 23);
             this.catangent.TabIndex = 29;
@@ -352,7 +359,7 @@
             // 
             // logarithmTen
             // 
-            this.logarithmTen.Location = new System.Drawing.Point(12, 297);
+            this.logarithmTen.Location = new System.Drawing.Point(348, 228);
             this.logarithmTen.Name = "logarithmTen";
             this.logarithmTen.Size = new System.Drawing.Size(75, 23);
             this.logarithmTen.TabIndex = 30;
@@ -362,7 +369,7 @@
             // 
             // twoDivide
             // 
-            this.twoDivide.Location = new System.Drawing.Point(93, 297);
+            this.twoDivide.Location = new System.Drawing.Point(429, 228);
             this.twoDivide.Name = "twoDivide";
             this.twoDivide.Size = new System.Drawing.Size(75, 23);
             this.twoDivide.TabIndex = 31;
@@ -370,11 +377,41 @@
             this.twoDivide.UseVisualStyleBackColor = true;
             this.twoDivide.Click += new System.EventHandler(this.OneArgument);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(150, 139);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(37, 13);
+            this.label4.TabIndex = 32;
+            this.label4.Text = "Sasha";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(492, 139);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(37, 13);
+            this.label5.TabIndex = 33;
+            this.label5.Text = "Pasha";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(0, -2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(679, 379);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 35;
+            this.pictureBox2.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(342, 380);
+            this.ClientSize = new System.Drawing.Size(679, 372);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.twoDivide);
             this.Controls.Add(this.logarithmTen);
             this.Controls.Add(this.catangent);
@@ -407,9 +444,11 @@
             this.Controls.Add(this.multiplication);
             this.Controls.Add(this.difference);
             this.Controls.Add(this.amount);
+            this.Controls.Add(this.pictureBox2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -449,6 +488,9 @@
         private System.Windows.Forms.Button catangent;
         private System.Windows.Forms.Button logarithmTen;
         private System.Windows.Forms.Button twoDivide;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

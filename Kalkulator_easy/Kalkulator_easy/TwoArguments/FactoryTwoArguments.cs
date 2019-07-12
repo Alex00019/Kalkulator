@@ -4,15 +4,15 @@ namespace Calculator
 {
 
     public class FactoryTwoArguments
-    {
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="first">
-        /// 
-        /// </param>
-        /// <param name="second"></param>
-        /// <returns></returns>
+    { /// <summary>
+      /// This method create calculator with two arguments
+      /// </summary>
+      /// <param name="name">
+      /// Calling name 
+      /// </param>
+      /// <returns>
+      /// It`s calculator
+      /// </returns>
         public static ITwoArgumentsCalculator CreateCalculate(string name)
         {           
             switch (name)

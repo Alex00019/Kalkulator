@@ -4,6 +4,15 @@ namespace Calculator
 {
     public class FactoryOneArgument
     {
+        /// <summary>
+        /// This method create calculator with one argument
+        /// </summary>
+        /// <param name="name">
+        /// Calling name 
+        /// </param>
+        /// <returns>
+        /// It`s calculator
+        /// </returns>
         public static IOneArgumentsCalculator CreateCalculate(string name)
         {
             switch (name)
