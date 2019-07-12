@@ -2,7 +2,7 @@
 
 namespace Calculator
 {
-    public class Root: IOneArgumentsCalculator
+    public class Root : IOneArgumentsCalculator
     {
         /// <summary>
         /// root argument

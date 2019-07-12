@@ -22,4 +22,3 @@ namespace Calculator.Tests.CalculateTest
         }
     }
 }
- 

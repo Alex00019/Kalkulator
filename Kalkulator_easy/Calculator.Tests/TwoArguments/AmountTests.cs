@@ -9,7 +9,7 @@ namespace Calculator.Tests.CalculateTest
         public void TwoArgumentsTest()
         {
             var calculator = new Amount();
-            double arthalTwo = calculator.Calculate(4,7);
+            double arthalTwo = calculator.Calculate(4, 7);
             Assert.AreEqual(11, arthalTwo);
         }
 

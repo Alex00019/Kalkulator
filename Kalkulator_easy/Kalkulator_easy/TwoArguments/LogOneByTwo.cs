@@ -18,7 +18,7 @@ namespace Calculator
         /// </returns>
         public double Calculate(double first, double second)
         {
-            if ((second <= 0) || (first < 0) || (first == 1) ) throw new Exception(" Значение логарифма недопустимо ");
+            if ((second <= 0) || (first < 0) || (first == 1)) throw new Exception(" Значение логарифма недопустимо ");
             return Math.Log(first, second);
         }
     }

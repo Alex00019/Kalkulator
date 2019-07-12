@@ -18,8 +18,8 @@ namespace Calculator.Tests.CalculateTest
         public void DivisionByZeroTest()
         {
             var calculator = new Division();
-            Assert.Throws<Exception>(() =>calculator.Calculate(395, 0));
-  
+            Assert.Throws<Exception>(() => calculator.Calculate(395, 0));
+
         }
     }
 }

@@ -7,7 +7,7 @@ namespace Calculator.Tests.CalculateTest
         [TestCase(10, 1)]
         [TestCase(100, 2)]
         [TestCase(1000, 3)]
-        public void CalculateTest( double firstValue, double expected)
+        public void CalculateTest(double firstValue, double expected)
         {
             var calculator = new LogarithmTen();
             var actualResult = calculator.Calculate(firstValue);

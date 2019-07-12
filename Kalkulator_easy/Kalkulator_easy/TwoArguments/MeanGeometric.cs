@@ -18,7 +18,7 @@ namespace Calculator
         /// </returns>
         public double Calculate(double first, double second)
         {
-            return Math.Sqrt((first*first) + (second*second));
+            return Math.Sqrt((first * first) + (second * second));
         }
     }
 }

@@ -13,7 +13,7 @@ namespace Calculator
       /// It`s calculator
       /// </returns>
         public static ITwoArgumentsCalculator CreateCalculate(string name)
-        {           
+        {
             switch (name)
             {
                 case "amount":
@@ -40,9 +40,9 @@ namespace Calculator
                     return new Max();
                 case "meanGeometric":
                     return new MeanGeometric();
-                    default:
+                default:
                     throw new Exception("Неизвестная операция");
             }
-        }    
-     }
+        }
+    }
 }
