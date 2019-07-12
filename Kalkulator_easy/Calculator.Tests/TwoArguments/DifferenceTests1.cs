@@ -2,17 +2,17 @@
 
 namespace Calculator.Tests.CalculateTest
 {
-    public class DivisionTestsCase
+    public class DifferenceTests
     {
-        [TestCase(20, 10, 2)]
-        [TestCase(22, 2, 11)]
-        [TestCase(9, 9, 1)]
+        [TestCase(20, 10, 10)]
+        [TestCase(55, 2, 53)]
+        [TestCase(9, 8, 1)]
         public void CalculateTest(
     double firstValue,
     double secondValue,
     double expected)
         {
-            var calculator = new Division();
+            var calculator = new Difference();
             var actualResult = calculator.Calculate(firstValue, secondValue);
             Assert.AreEqual(expected, actualResult, 0.001);
         }

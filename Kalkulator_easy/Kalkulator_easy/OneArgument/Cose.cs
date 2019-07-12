@@ -2,7 +2,7 @@
 
 namespace Calculator
 {
-    public class Cose : IOneArgumentsCalculator
+    public class Cos : IOneArgumentsCalculator
     {
         /// <summary>
         /// finding the cose of the argument

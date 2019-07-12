@@ -46,8 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="OneArgument\ArcCose.cs" />
     <Compile Include="OneArgument\Arcctg.cs" />
+    <Compile Include="OneArgument\Arcos.cs" />
     <Compile Include="OneArgument\Arcsine.cs" />
     <Compile Include="OneArgument\Arctan.cs" />
     <Compile Include="OneArgument\Catangent.cs" />

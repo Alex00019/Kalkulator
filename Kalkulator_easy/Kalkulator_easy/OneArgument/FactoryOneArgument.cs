@@ -32,11 +32,11 @@ namespace Calculator
                 case "oneDivideByX":
                     return new OneDivideByX();
                 case "cose":
-                    return new Cose();
+                    return new Cos();
                 case "exp":
                     return new Exp();
                 case "arccose":
-                    return new Arcose();
+                    return new Arcos();
                 case "arcctg":
                     return new Arcctg();
                 case "catangent":

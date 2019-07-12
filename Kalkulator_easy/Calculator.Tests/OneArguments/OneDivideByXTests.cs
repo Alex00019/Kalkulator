@@ -3,19 +3,19 @@ using System;
 
 namespace Calculator.Tests.CalculateTest
 {
-    public class TwoDivideXTestsCase
+    public class OneDivideByXTests
     {
-        [TestCase(10, 0.2)]
-        [TestCase(1, 2)]
-        [TestCase(-1, -2)]
+        [TestCase(5, 0.2)]
+        [TestCase(10, 0.1)]
+        [TestCase(-20, -0.05)]
         public void CalculateTest(double firstValue, double expected)
         {
-            var calculator = new TwoDivideX();
+            var calculator = new OneDivideByX();
             var actualResult = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, actualResult, 0.01);
         }
         [Test]
-        public void TwoDivideXByZeroTest()
+        public void OneDivideByXByZeroTest()
         {
             var calculator = new OneDivideByX();
             Assert.Throws<Exception>(() => calculator.Calculate(0));

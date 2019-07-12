@@ -2,16 +2,16 @@
 
 namespace Calculator.Tests.CalculateTest
 {
-    public class ArcctgTestsCase
+    public class CosTests
     {
-        [TestCase(7, 0.141)]
-        [TestCase(88, 0.011)]
-        [TestCase(99, 0.010)]
+        [TestCase(999, 0.999)]
+        [TestCase(69, 0.993)]
+        [TestCase(233, 0.866)]
         public void CalculateTest(double firstValue, double expected)
         {
-            var calculator = new Arcctg();
+            var calculator = new Cos();
             var actualResult = calculator.Calculate(firstValue);
-            Assert.AreEqual(expected, actualResult, 0.001);
+            Assert.AreEqual(expected, actualResult, 0.01);
         }
     }
 }

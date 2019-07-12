@@ -16,9 +16,8 @@ namespace Calculator
             {
                 double first = Convert.ToDouble(textBox1.Text);
                 double second = Convert.ToDouble(textBox2.Text);
-                double result = 0.0;
                 ITwoArgumentsCalculator Calculator = FactoryTwoArguments.CreateCalculate(((Button)sender).Name);
-                result = Calculator.Calculate(first, second);
+                double result = Calculator.Calculate(first, second);
                 textBox3.Text = result.ToString();
             }
             catch (Exception exc)

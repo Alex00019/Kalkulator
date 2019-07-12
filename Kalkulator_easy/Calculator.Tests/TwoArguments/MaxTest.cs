@@ -2,19 +2,21 @@
 
 namespace Calculator.Tests.CalculateTest
 {
-    public class DifferenceTestsCase
+    public class MaxTest
     {
-        [TestCase(20, 10, 10)]
-        [TestCase(55, 2, 53)]
-        [TestCase(9, 8, 1)]
+        [TestCase(0, 0, 0)]
+        [TestCase(3, 4, 4)]
+        [TestCase(-7, -2, -2)]
         public void CalculateTest(
     double firstValue,
     double secondValue,
     double expected)
         {
-            var calculator = new Difference();
+            var calculator = new Max();
             var actualResult = calculator.Calculate(firstValue, secondValue);
-            Assert.AreEqual(expected, actualResult, 0.001);
+            Assert.AreEqual(expected, actualResult);
         }
     }
 }
+
+

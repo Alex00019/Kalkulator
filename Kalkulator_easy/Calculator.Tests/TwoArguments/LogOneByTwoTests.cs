@@ -3,7 +3,7 @@ using System;
 
 namespace Calculator.Tests.CalculateTest
 {
-    public class LogOneByTwoTestsCase
+    public class LogOneByTwoTests
     {
         [TestCase(8, 2, 3)]
         [TestCase(27, 3, 3)]

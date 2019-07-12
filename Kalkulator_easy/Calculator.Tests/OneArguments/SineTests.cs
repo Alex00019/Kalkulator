@@ -2,16 +2,16 @@
 
 namespace Calculator.Tests.CalculateTest
 {
-    public class CoseTestsCase
+    public class SinTests
     {
-        [TestCase(999, 0.999)]
-        [TestCase(69, 0.993)]
-        [TestCase(233, 0.866)]
+        [TestCase(0, 0.000)]
+        [TestCase(8, 0.989)]
+        [TestCase(-20, -0.912)]
         public void CalculateTest(double firstValue, double expected)
         {
-            var calculator = new Cose();
+            var calculator = new Sine();
             var actualResult = calculator.Calculate(firstValue);
-            Assert.AreEqual(expected, actualResult, 0.01);
+            Assert.AreEqual(expected, actualResult, 0.001);
         }
     }
 }

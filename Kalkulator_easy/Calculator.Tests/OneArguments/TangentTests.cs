@@ -2,16 +2,16 @@
 
 namespace Calculator.Tests.CalculateTest
 {
-    public class DegreeTestsCase
+    public class TangentTests
     {
-        [TestCase(65, 4225)]
-        [TestCase(99, 9801)]
-        [TestCase(50, 2500)]
+        [TestCase(0, 0.000)]
+        [TestCase(6, -0.291)]
+        [TestCase(-7, -0.871)]
         public void CalculateTest(double firstValue, double expected)
         {
-            var calculator = new Degree();
+            var calculator = new Tangent();
             var actualResult = calculator.Calculate(firstValue);
-            Assert.AreEqual(expected, actualResult, 0.01);
+            Assert.AreEqual(expected, actualResult, 0.001);
         }
     }
 }

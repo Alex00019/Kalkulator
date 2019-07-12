@@ -2,7 +2,7 @@
 
 namespace Calculator.Tests.CalculateTest
 {
-    public class MinTestCase
+    public class MinTest
     {
         [TestCase(5, 2, 2)]
         [TestCase(10, 15, 10)]

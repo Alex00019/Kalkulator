@@ -2,7 +2,7 @@
 
 namespace Calculator
 {
-    public class Arcose : IOneArgumentsCalculator
+    public class Arcos : IOneArgumentsCalculator
     {
         /// <summary>
         /// finding the arc cosine of the argument
@@ -15,7 +15,10 @@ namespace Calculator
         /// </returns>
         public double Calculate(double argument)
         {
-            if (argument > 1 || argument < -1) throw new Exception(" Значение недопустимо ");
+            if (argument > 1 || argument < -1)
+            {
+                throw new Exception(" Значение недопустимо ");
+            }
             return Math.Acos(argument);
         }
     }

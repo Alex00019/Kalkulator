@@ -2,14 +2,14 @@
 
 namespace Calculator.Tests.CalculateTest
 {
-    public class SineTestsCase
+    public class ArcctgTests
     {
-        [TestCase(0, 0.000)]
-        [TestCase(8, 0.989)]
-        [TestCase(-20, -0.912)]
+        [TestCase(7, 0.141)]
+        [TestCase(88, 0.011)]
+        [TestCase(99, 0.010)]
         public void CalculateTest(double firstValue, double expected)
         {
-            var calculator = new Sine();
+            var calculator = new Arcctg();
             var actualResult = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, actualResult, 0.001);
         }

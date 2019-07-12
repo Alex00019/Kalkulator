@@ -2,17 +2,17 @@
 
 namespace Calculator.Tests.CalculateTest
 {
-    public class LReversePowerTestsCase
+    public class RemainderOfDivisioTests
     {
-        [TestCase(5, 3, 1.709)]
-        [TestCase(7, 2, 2.645)]
-        [TestCase(9, 38, 1.059)]
+        [TestCase(22, 3, 1)]
+        [TestCase(62, 5, 2)]
+        [TestCase(9, 9, 0)]
         public void CalculateTest(
     double firstValue,
     double secondValue,
     double expected)
         {
-            var calculator = new ReversePower();
+            var calculator = new RemainderOfDivisio();
             var actualResult = calculator.Calculate(firstValue, secondValue);
             Assert.AreEqual(expected, actualResult, 0.001);
         }
